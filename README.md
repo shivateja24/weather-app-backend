@@ -85,5 +85,12 @@ Mobile :
 
 ![image](https://github.com/user-attachments/assets/529d3c51-34cb-43f1-8bbd-c616fecde8dc)
 
+
+Here is the deployed link for the application : 
+
+https://66d5de236f15570f8dd7e538--bespoke-buttercream-55dc79.netlify.app/
+
+Deployed using Netlify! .
+
  
 
