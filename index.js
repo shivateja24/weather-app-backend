@@ -18,7 +18,10 @@ mongoose.connect(connectionString, {
 })
 .then(() => console.log('MongoDB connected'))
 .catch((err) => console.log("unable to connect", err));
-
+app.get('/', async (req,res)=>{
+    res.send("Welcome to know weather app");
+    return ;
+})
 app.post('/signup', async (req, res) => {
     const { username, password } = req.body;
     
