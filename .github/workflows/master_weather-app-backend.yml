@@ -32,7 +32,7 @@ jobs:
           path: .
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows
     needs: build
     environment:
       name: 'Production'
@@ -60,4 +60,8 @@ jobs:
           app-name: 'weather-app-backend'
           slot-name: 'Production'
           package: .
+
+      - name: Start Application
+        run: | 
+               az webapp restart --name ${{ secrets.AZURE_APP_NAME }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
           
